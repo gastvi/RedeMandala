@@ -1,0 +1,16 @@
+
+
+#card {
+    margin: 100px;
+}
+
+
+#div_main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: white;
+    width: 1300px;
+    
+}
+
