@@ -1,0 +1,19 @@
+
+/* Posição footer */
+footer{
+    display: flex;
+    align-items: flex-end;
+    /* position:absolute; */
+    bottom:0;
+    width:100%
+
+}
+/* FORMTAÇÃO DA FONTE NO FOOTER */
+
+/* Lista do footer */
+footer {font-size: 12px;;}
+
+/* h5 do footer */
+.text-uppercase{ font-size: 14px; }
+
+/* FORMTAÇÃO DA FONTE NO FOOTER */
