@@ -1,0 +1,86 @@
+     /* ----------HEADER----------- */
+     
+     header {
+         font-family: Gill Sans Extrabold, sans-serif;
+         font-size: 18px;
+     }
+     
+     #login::before {
+         content: "";
+         background-image: url('../img/perfil.svg');
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         margin-left: -29px;
+         margin-top: -1px;
+     }
+     
+     #listaoculta {
+         margin-left: 2em;
+     }
+     
+     #icon-sacola {
+         width: 40;
+         height: 40px;
+     }
+     /* ----------HEADER----------- */
+     /* ----------FOOTER----------- */
+     
+     footer {
+         bottom: 0;
+     }
+     
+     #footerredesocial {
+         padding-bottom: 0.5rem!important;
+         padding-top: 0.5rem!important;
+     }
+     
+     #footerContato {
+         margin-bottom: 0.2rem!important;
+         font-size: 12px;
+     }
+     /* ----------FOOTER----------- */
+
+     /* Login e Cadastro */
+     .modal-footer{
+         text-align: center;
+         background-color: #E6E6E6;
+         
+     }
+     .form-control{
+         border-radius: 40px;
+     }
+     .btn{
+        border-radius: 40px;
+     }
+     #imgNome::before {
+        content: "";
+        background-image: url('../img/user.svg');
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        margin-left: -29px;
+        margin-top: -1px;
+    }
+
+    #imgEmail::before{
+        content: "";
+        background-image: url('../img/email.svg');
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        margin-left: -29px;
+        margin-top: -1px;
+    }
+
+    #imgSenha::before {
+        content: "";
+        background-image: url('../img/pass.svg');
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        margin-left: -29px;
+        margin-top: -1px;
+    }
+
+      /* Login e Cadastro */
