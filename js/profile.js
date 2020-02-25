@@ -104,7 +104,49 @@ const buscarCep = () => {
     }
     //  consumir api do cep - end
 
+// verifica se o cpf tem um númerro valido - begin
 
+const verificarCpf = () => {
+        let soma = 0;
+        let resto = 0;
+
+        if (inputCpf.value == "00000000000") {
+            inputCpf.setAttribute("class", "form-control is-invalid");
+            return;
+        }
+        for (let i = 1; i <= 9; i++) {
+            soma += parseInt(inputCpf.value.substring(i - 1, i)) * (11 - i);
+        }
+        resto = (soma * 10) % 11;
+
+        if ((resto == 10) || (resto == 11)) {
+            resto = 0;
+        }
+        if (resto != parseInt(inputCpf.value.substring(9, 10))) {
+            inputCpf.setAttribute("class", "form-control is-invalid");
+            return;
+        }
+
+        soma = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            soma += parseInt(inputCpf.value.substring(i - 1, i)) * (12 - i);
+        }
+        resto = (soma * 10) % 11;
+
+        if ((resto == 10) || (resto == 11)) {
+            resto = 0;
+        }
+        if (resto != parseInt(inputCpf.value.substring(10, 11))) {
+            inputCpf.setAttribute("class", "form-control is-invalid");
+            return;
+        }
+        inputCpf.setAttribute("class", "form-control is-valid");
+
+
+
+    }
+    // verifica se o cpf tem um númerro valido - end
 
 //  eventos de validação - begin
 
@@ -129,7 +171,7 @@ inputCpf.addEventListener("input", () => {
     } else if (inputCpf.value.length > 11) {
         inputCpf.value = inputCpf.value.substring(0, 11);
     } else {
-        inputCpf.setAttribute("class", "form-control is-valid");
+        verificarCpf();
     }
 
 })
