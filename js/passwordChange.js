@@ -2,6 +2,7 @@ let inputSenhaAtual = document.querySelector("#senhaAtual");
 let inputNovaSenha = document.querySelector("#novaSenha");
 let inputConfirmSenha = document.querySelector("#confirmSenha");
 
+//  eventos de validação - begin
 
 inputConfirmSenha.addEventListener("input", () => {
     if (inputConfirmSenha.value != inputNovaSenha.value && inputConfirmSenha.value != "") {
@@ -24,3 +25,5 @@ inputNovaSenha.addEventListener("input", () => {
 
     }
 })
+
+//  eventos de validação - end

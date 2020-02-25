@@ -25,21 +25,6 @@ inputCvv.addEventListener("input", () => {
     }
 })
 
-// inputValidade.addEventListener("input", () => {
-
-
-//     if (isNaN(inputValidade.value)) {
-//         inputValidade.value = inputValidade.value.slice(0, -1);
-//     }
-//     if (inputValidade.value.length > 5) {
-//         inputValidade.value = inputValidade.value.substring(0, 5);
-//     } else if (inputValidade.value.length < 5) {
-//         inputValidade.setAttribute("class", "form-control is-invalid");
-//     } else {
-//         inputValidade.setAttribute("class", "form-control is-valid");
-//     }
-
-// })
 
 inputNumeroCartao.addEventListener("input", () => {
 
