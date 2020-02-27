@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  /* ---------- FUNCAO DO BOTAO TOP----------- */
 $(function(){
     $(document).on( 'scroll', function(){
@@ -22,7 +22,3 @@ function scrollToTop() {
     } else clearTimeout(scrollAnimation);
 }
 
- /* ---------- FUNCAO DO BOTAO TOP----------- */
-=======
-
->>>>>>> aabcb0a00fc0fd4212019fa55ffca7d9951d59e1
