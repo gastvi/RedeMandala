@@ -16,45 +16,70 @@
 </head>
 
 <body>
-    ​
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar">
             <div class="container ">
-
+                <a href="# "><img id="logo " src="img/logooficial.png " alt="facebook " width=280 height=120></a>
                 <!-- BOTÃO MOBILE -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- BOTÃO MOBILE -->
 
                 <!-- OPÇÕES MENU -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a href="# "><img id="logo " src="img/logooficial.png " alt="facebook " width=280 height=120></a>
+                 
 
                     <ul class="navbar-nav mt-2 mt-lg-0 ml-auto justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="HomePage.html">Página Inicial</a>
+                            <a class="nav-link" href="index.html">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nós</a>
+                            <a class="nav-link" href="about.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produtos</a>
+                            <a class="nav-link" href="products.html">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profile.html">Perfil</a>
                         </li>
                         <!-- OPÇÕES MENU -->
 
-                        <!-- LOGIN E CADASTRA-SE -->
-                        <li id="listaoculta" class="nav-item dropdown">
-                            <a id="login" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Logar-se</a>
+                        <!-- LOGAR-SE SUSPENSO -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Logar-se
+                            </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">olá, faça seu login</a>
-                                <a class="dropdown-item" href="#">ou cadastre-se</a>
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormEmail1">Endereço de email</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                            placeholder="email@exemplo.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormPassword1">Senha</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                            placeholder="Senha">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Lembrar-me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Entrar</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalCadastro">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalSolicitarSenha">Esqueceu a senha?</a>
                             </div>
                         </li>
-                        <!-- LOGIN E CADASTRA-SE -->
+                        <!-- LOGAR-SE SUSPENSO -->
 
                         <!-- ICONE SACOLA -->
                         <li id="sacola" class="nav-item">
@@ -66,13 +91,91 @@
                 </div>
             </div>
         </nav>
-    </header>
+        <!-- INICIO Modal -->
+        <form class="cadastrar">
+            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Cadastrar-se</h5>
 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="emailUser">E-mail</label>
+                                    <input type="email" class="form-control" id="emailUser"
+                                        placeholder="Digite seu E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senhaUser">Senha</label>
+                                    <input type="password" class="form-control" id="senhaUser"
+                                        placeholder="Digite sua senha">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmarSenhaUser">Confirmar Senha</label>
+                                    <input type="password" class="form-control" id="confirmarSenhaUser"
+                                        placeholder="Digite novamente a senha">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nomeUser">Nome</label>
+                                    <input type="text" class="form-control" id="nomeUser" placeholder="Nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sobrenomeUser">Sobrenome</label>
+                                    <input type="text" class="form-control" id="sobrenomeUser" placeholder="Sobrenome">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Cadastrar-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form id="SolicitarSenha">
+            <div class="modal fade" id="modalSolicitarSenha" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Solicitar Nova Senha</h5>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Digite seu e-mail</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Solicitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <!-- FINAL MODAL -->
+    </header>
     <!-- CORPO -->
-    <main class="container mt-5 mb-5">
+    <main class="container mb-5">
         ​
         <section class="row pb-5">
-            <div class="col-md-12  mt-5 mb-3 ">
+            <div class="col-md-12 mb-3 ">
                 <h2 class="text-center mb-4 mt-2">Dados de usuário</h2>
             </div>
             <div class="col-md-3 col-sm-12 borderProfile pb-5 mb-5">
@@ -88,7 +191,7 @@
                         <a class="nav-link text-secondary" href="payment">Pagamento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Carrinho</a>
+                        <a class="nav-link text-secondary" href="cart.html">Carrinho</a>
                     </li>
 
                 </ul>
