@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Mandala</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar">
+            <div class="container ">
+                <a href="# "><img id="logo " src="img/logooficial.png " alt="facebook " width=280 height=120></a>
+                <!-- BOTÃO MOBILE -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- BOTÃO MOBILE -->
+
+                <!-- OPÇÕES MENU -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                 
+
+                    <ul class="navbar-nav mt-2 mt-lg-0 ml-auto justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Perfil</a>
+                        </li>
+                        <!-- OPÇÕES MENU -->
+
+                        <!-- LOGAR-SE SUSPENSO -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Logar-se
+                            </a>
+                            <div class="dropdown-menu">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormEmail1">Endereço de email</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                            placeholder="email@exemplo.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormPassword1">Senha</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                            placeholder="Senha">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Lembrar-me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Entrar</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalCadastro">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalSolicitarSenha">Esqueceu a senha?</a>
+                            </div>
+                        </li>
+                        <!-- LOGAR-SE SUSPENSO -->
+
+                        <!-- ICONE SACOLA -->
+                        <li id="sacola" class="nav-item">
+                            <a class="nav-link" href="#"><img id="icon-sacola" src="img/sacola.svg" alt="sacola"></a>
+                        </li>
+                        <!-- ICONE SACOLA -->
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- INICIO Modal -->
+        <form class="cadastrar">
+            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Cadastrar-se</h5>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="emailUser">E-mail</label>
+                                    <input type="email" class="form-control" id="emailUser"
+                                        placeholder="Digite seu E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senhaUser">Senha</label>
+                                    <input type="password" class="form-control" id="senhaUser"
+                                        placeholder="Digite sua senha">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmarSenhaUser">Confirmar Senha</label>
+                                    <input type="password" class="form-control" id="confirmarSenhaUser"
+                                        placeholder="Digite novamente a senha">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nomeUser">Nome</label>
+                                    <input type="text" class="form-control" id="nomeUser" placeholder="Nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sobrenomeUser">Sobrenome</label>
+                                    <input type="text" class="form-control" id="sobrenomeUser" placeholder="Sobrenome">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Cadastrar-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form id="SolicitarSenha">
+            <div class="modal fade" id="modalSolicitarSenha" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Solicitar Nova Senha</h5>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Digite seu e-mail</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Solicitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <!-- FINAL MODAL -->
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h1 align="center">PAGINA EM CONSTRUÇÃO</h1>
+
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="sticky-footer" class="py-0 bg-dark text-white-50">
+        <!-- Rede social -->
+        <div style="background-color: #00b6b6;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div id="footerredesocial" class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Conecte-se conosco nas redes sociais!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a href="#" class="fb-ic">
+                            <img class="fab fa-facebook-f white-text mr-4" src="img/facebook.png" alt="facebook" width=35 height=35>
+                        </a>
+                        <!--Instagram-->
+                        <a href="#" class="ins-ic">
+                            <img class="fab fa-instagram white-text" src="img/instagram.png" alt="instagram" width=35 height=35> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+        <!-- Rede social -->
+
+        <!-- MENU E CONTATO -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- CONJUNTO DE COLUNAS-->
+            <div class="row mt-3">
+
+                <!-- PRIMEIRA COLUNA -->
+                <div id="footerContato" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">REDE MANDALA</h6>
+                    <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p align="justify">A Rede Mandala é uma loja virtual especializada em redes de descanso. Não vendemos simplesmente redes, proporcionamos a você ótimos momentos de descanso em uma rede artesanal de qualidade por um preço justo. </p>
+
+                </div>
+                <!-- PRIMEIRA COLUNA -->
+
+                <!-- SEGUNDA COLUNA -->
+                <div id="footerContato" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="fas fa-home mr-0" href="index.html" style="text-decoration: none">Página Principal</a>
+                    </p>
+                    <p>
+                        <a class="fas fa-home mr-0" href="about.html" style="text-decoration: none">Sobre Nós</a>
+                    </p>
+                    <p>
+                        <a class="fas fa-home mr-0" href="products.html" style="text-decoration: none">Produtos</a>
+                    </p>
+                    <p>
+                        <a class="fas fa-home mr-0" href="profile.html" style="text-decoration: none">Perfil</a>
+                    </p>
+
+                </div>
+                <!-- SEGUNDA COLUNA -->
+
+
+                <!-- TERCEIRA COLUNA -->
+                <div id="footerContato" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contato</h6>
+                    <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="fas fa-home mr-0" href="contact.html" style="text-decoration: none">CLIQUE AQUI!</a>
+                    </p>
+
+                </div>
+                <!-- TERCEIRA COLUNA -->
+
+            </div>
+            <!-- CONJUNTO DE COLUNAS-->
+
+        </div>
+        <!-- MENU E CONTATO -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> RedeMandala.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- BOTAO TOP -->
+    <div class="smoothscroll-top">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+    </div>
+    <!-- BOTAO TOP -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
