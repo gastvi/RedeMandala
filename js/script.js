@@ -1,16 +1,24 @@
-let inputEmail = document.getElementById('emailUsuario');
-let inputSenha = document.getElementById('senhaUsuario');
-let inputConfirmarSenha = document.getElementById('confirmarSenhaUsuario');
-let inputNome = document.getElementById('nomeUsuario');
-
-
-// ---------------- Validando Senha ------------------
-inputConfirmarSenha.addEventListener('keyup', (event)=>{
-    if(inputConfirmarSenha.value != inputSenha.value){
-        inputConfirmarSenha.setAttribute('class', 'form-control is-invalid')
-        inputSenha.setAttribute('class','form-control is-invalid')
-    }else{
-        inputConfirmarSenha.setAttribute('class', 'form-control is-valid')
-        inputSenha.setAttribute('class','form-control is-valid')
-    }
+ /* ---------- FUNCAO DO BOTAO TOP----------- */
+$(function(){
+    $(document).on( 'scroll', function(){
+        if ($(window).scrollTop() > 100) {
+            $('.smoothscroll-top').addClass('show');
+        } else {
+            $('.smoothscroll-top').removeClass('show');
+        }
+    });
+    $('.smoothscroll-top').on('click', scrollToTop);
 });
+
+
+
+function scrollToTop() {
+    var position =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    if (position) {
+        window.scrollBy(0, -Math.max(1, Math.floor(position / 20)));
+        scrollAnimation = setTimeout("scrollToTop()", 15);
+    } else clearTimeout(scrollAnimation);
+}
+
+ /* ---------- FUNCAO DO BOTAO TOP----------- */
