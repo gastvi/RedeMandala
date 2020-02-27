@@ -1,3 +1,4 @@
+
  /* ---------- FUNCAO DO BOTAO TOP----------- */
 $(function(){
     $(document).on( 'scroll', function(){
@@ -21,4 +22,3 @@ function scrollToTop() {
     } else clearTimeout(scrollAnimation);
 }
 
- /* ---------- FUNCAO DO BOTAO TOP----------- */
