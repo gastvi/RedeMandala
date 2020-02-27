@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+=======
+/* CSS GABRIEL */
+.ajuste{
+    font-size: medium;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.logo{
+    position: absolute;
+    margin-left: 34%;
+}
+
+.cabecalho{
+ font-size: medium;
+ display: flex;
+ justify-content: center;
+ margin-bottom: -1%;
+}
+
+.imagens{
+ display: flex;
+ justify-content: center;
+ margin-top: -1%;
+}
+
+.frase{
+    width: 45%;
+font-weight: bold;
+font-size: 12px;
+margin-left: 29%;
+}
+ 
+>>>>>>> devMandala
  /* ----------HEADER----------- */
  
  header {
@@ -152,3 +189,143 @@ footer a:hover {
      }
  }
 
+<<<<<<< HEAD
+=======
+
+     /* ----------HEADER----------- */
+     
+     header {
+         font-family: Gill Sans Extrabold, sans-serif;
+         font-size: 18px;
+     }
+     
+     #login::before {
+         content: "";
+         background-image: url('../img/perfil.svg');
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         margin-left: -29px;
+         margin-top: -1px;
+     }
+     
+     #listaoculta {
+         margin-left: 2em;
+     }
+     
+     #icon-sacola {
+         width: 40;
+         height: 40px;
+     }
+     /* ----------HEADER----------- */
+     /* ----------FOOTER----------- */
+     
+     footer {
+         bottom: 0;
+     }
+     
+     #footerredesocial {
+         padding-bottom: 0.5rem!important;
+         padding-top: 0.5rem!important;
+     }
+     
+     #footerContato {
+         margin-bottom: 0.2rem!important;
+         font-size: 12px;
+     }
+     /* ----------FOOTER----------- */
+
+
+
+#card {
+    margin: 100px;
+}
+
+
+#div_main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: white;
+    width: 1300px;
+    
+}
+
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    width: 100%;
+}
+
+
+h1{
+    font-size: 10px;
+}
+
+
+#tituloProdutos {
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    font-family: 'Berkshire Swash';
+}
+
+#tituloCard {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#imgBanner {
+    margin-top: 50px;
+}
+
+#infoProdutos {
+    display: flex;
+}
+
+#produto {
+    margin-top: 300px;
+    width: 80%;
+    
+}
+
+#preco {
+    margin-left: 20px;
+}
+
+
+
+#tituloCardProd {
+    font-size: 50px;
+}
+
+#descCard {
+    font-size: 20px;
+}
+
+#tituloPag {
+    font-size: 70px;
+    font-family: 'Berkshire Swash';
+    margin-top: 50px;
+    
+}
+
+#divProduto {
+    width: 80%;
+}
+>>>>>>> devMandala
