@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> devMandala
  /* ---------- FUNCAO DO BOTAO TOP----------- */
 $(function(){
     $(document).on( 'scroll', function(){
@@ -21,4 +25,7 @@ function scrollToTop() {
     } else clearTimeout(scrollAnimation);
 }
 
+<<<<<<< HEAD
  /* ---------- FUNCAO DO BOTAO TOP----------- */
+=======
+>>>>>>> devMandala
