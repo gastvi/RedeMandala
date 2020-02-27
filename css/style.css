@@ -5,7 +5,7 @@
      font-size: 18px;
  }
  
- #login::before {
+ #login::before {}
 
  #navbarDropdown{
      margin-left: 1.4em;
