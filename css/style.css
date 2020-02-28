@@ -70,19 +70,7 @@ header {
 /* ----------HEADER----------- */
 
 
-/* ----------MAIN----------- */
 
-
-/* main p {
-    color: black;
-} */
-
-#contato p {
-    color: black;
-}
-
-
-/* ----------MAIN----------- */
 
 
 /* ----------FOOTER----------- */
@@ -114,6 +102,10 @@ footer a:hover {
 #footerContato {
     margin-bottom: 0.2rem!important;
     font-size: 12px;
+}
+
+.fas{
+    color: white;
 }
 
 
