@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Redes Mandala</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Mandala</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/profileForms.css" rel="stylesheet">
-
-
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar ">
             <div class="container ">
                 <a href="# "><img id="logo " src="img/logooficial.png " alt="facebook " width=280 height=120></a>
                 <!-- BOTÃO MOBILE -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- BOTÃO MOBILE -->
 
                 <!-- OPÇÕES MENU -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-
+                 
 
                     <ul class="navbar-nav mt-2 mt-lg-0 ml-auto justify-content-center">
                         <li class="nav-item">
@@ -47,30 +42,35 @@
 
                         <!-- LOGAR-SE SUSPENSO -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Logar-se
-                        </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Logar-se
+                            </a>
                             <div class="dropdown-menu">
                                 <form class="px-4 py-3">
                                     <div class="form-group">
                                         <label for="exampleDropdownFormEmail1">Endereço de email</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                            placeholder="email@exemplo.com">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleDropdownFormPassword1">Senha</label>
-                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                            placeholder="Senha">
                                     </div>
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="dropdownCheck">
                                         <label class="form-check-label" for="dropdownCheck">
-                                        Lembrar-me
-                                    </label>
+                                            Lembrar-me
+                                        </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Entrar</button>
                                 </form>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal" data-target="#modalCadastro">Novo, por aqui? Regitre-se.</a>
-                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal" data-target="#modalSolicitarSenha">Esqueceu a senha?</a>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalCadastro">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalSolicitarSenha">Esqueceu a senha?</a>
                             </div>
                         </li>
                         <!-- LOGAR-SE SUSPENSO -->
@@ -87,29 +87,33 @@
         </nav>
         <!-- INICIO Modal -->
         <form class="cadastrar">
-            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">Cadastrar-se</h5>
 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="emailUser">E-mail</label>
-                                    <input type="email" class="form-control" id="emailUser" placeholder="Digite seu E-mail">
+                                    <input type="email" class="form-control" id="emailUser"
+                                        placeholder="Digite seu E-mail">
                                 </div>
                                 <div class="form-group">
                                     <label for="senhaUser">Senha</label>
-                                    <input type="password" class="form-control" id="senhaUser" placeholder="Digite sua senha">
+                                    <input type="password" class="form-control" id="senhaUser"
+                                        placeholder="Digite sua senha">
                                 </div>
                                 <div class="form-group">
                                     <label for="confirmarSenhaUser">Confirmar Senha</label>
-                                    <input type="password" class="form-control" id="confirmarSenhaUser" placeholder="Digite novamente a senha">
+                                    <input type="password" class="form-control" id="confirmarSenhaUser"
+                                        placeholder="Digite novamente a senha">
                                 </div>
 
                                 <div class="form-group">
@@ -133,15 +137,16 @@
         </form>
 
         <form id="SolicitarSenha">
-            <div class="modal fade" id="modalSolicitarSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="modalSolicitarSenha" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">Solicitar Nova Senha</h5>
 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <div class="form-row">
@@ -160,91 +165,29 @@
         </form>
         <!-- FINAL MODAL -->
     </header>
-    <!-- CORPO -->
-    <main class="container mb-5">
-        ​
-        <section class="row">
-            <div class="col-md-12 mb-3 ">
-                <h2 class="text-center mb-4 mt-2">Dados Pessoais</h2>
-            </div>
-            <div class="col-md-3 col-sm-12 borderProfile">
-                <!--
-                    //TODO
-                        align-items-center
-                        justify-content-center
-                        align-content-center
-                -->
-                <ul class="nav flex-column pl-3 pb-4">
-                    <li class="nav-item ">
-                        <a class="nav-link text-secondary" href="profile.html">Dados Pessoais</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="user.html">Usuário</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="payment.html">Pagamento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Carrinho</a>
-                    </li>
 
-                </ul>
-            </div>
-            <div class="col-md-9 col-sm-12">
-
-                <form action="#" method="POST" class="col-md-7 col-sm-12">
-                    <div class="form-group">
-                        <label for="nome">Nome completo: </label>
-                        <input class="form-control" placeholder="Digite seu nome completo" id="nome" name="nome" type="text" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="data-nasc">Data de nascimento: </label>
-                        <input class="form-control" id="data-nasc" name="data-nasc" type="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cpf">CPF: </label>
-                        <input class="form-control" placeholder="Digite seu CPF" id="cpf" name="cpf" type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cep">Cep: </label>
-                        <input class="form-control" placeholder="Digite seu CEP" id="cep" name="cep" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="endereco">Endereço: </label>
-                        <input class="form-control" placeholder="Digite seu endereco" id="endereco" name="endereco" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="bairro">Bairro: </label>
-                        <input class="form-control" placeholder="Digite seu bairro" id="bairro" name="bairro" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="numero">Numero: </label>
-                        <input class="form-control" placeholder="Digite seu numero" id="numero" name="numero" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="complemento">Complemento: </label>
-                        <input class="form-control" placeholder="Digite seu complemento" id="complemento" name="complemento" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="estado">Estado: </label>
-                        <select name="estado" id="estado" class="form-control">
-                            <option value="" disabled selected>Selecione um estado...</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cidade">Cidade: </label>
-                        <select disabled name="cidade" id="cidade" class="form-control">
-                            <option value="" disabled selected>Selecione uma cidade...</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-outline-info">Salvar</button>
-                        <a href="homePage.html" class="btn btn-outline-secondary">Cancelar</a>
-                    </div>
-                </form>
-
-            </div>
+    <main>
+        <section class="container-fluid">
+            <a href="listadeprodutos.html"> <img class="img-fluid" src="img/Banner-2.jpg" alt=""></a>
+            <h1 id="tituloPag" class="text-center"> Rede de Dormir Casal Ostra </h1>
+            <div id="divProduto"class="card mb-3 mx-auto">
+                <img class="card-img-top" src="img/pack-produtos/produto8.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 id="tituloCardProd" class="card-title text-center"> Descrição Do Produto </h5>
+                  <p id="descCard" class="card-text text-center">A Rede de Dormir Casal Ostra pode ser usada em todo e qualquer ambiente, proporciona conforto em seu descanso devido o seu tecido macio e confortável, servindo ao mesmo tempo para decoração do seu lar. Tenha sempre um bom descanso e bons sonhos em nossas Redes de Dormir.</p>
+                  <br>
+                  <h5>Dimensões: 2,00 m x 2,00 m</h5>
+                  <h5> Comprimento Total: 4,00 m </h5>
+                  <h5> Peso: 1,9 kg</h5>
+                  <h5>Capacidade Máxima de Carga: 160 kg</h5>
+                  <br>
+                  <h5>Prazo de validade é de tempo indeterminado. Nossas redes de dormir não mancham e nem soltam tinta desde que sejam lavadas de acordo com o manual que as acompanham. Pode haver uma diminuição ou esticamento de cerca de 5% do tamanho total devido à lavagem. Nossos produtos são pré-selecionados por uma equipe que atesta sua segurança e qualidade contra os defeitos de fabricação.</h5>
+                  <br>
+                  <h2>Preço:</h2>
+                  <h2>De: R$ 259,00 Por: R$ 109,99</h2>
+                  <button type="button" class="btn btn-primary btn-lg"> <img src="img/sacola.svg" width="40px"> Adicionar à Sacola!</button>
+                </div>
+              </div>
         </section>
     </main>
     <!-- Footer -->
@@ -308,16 +251,16 @@
                     <h6 class="text-uppercase font-weight-bold">Products</h6>
                     <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a class="fas fa-home mr-0" href="#!">Página Principal</a>
+                        <a class="fas fa-home mr-0" href="index.html" style="text-decoration: none">Página Principal</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="#!">Sobre Nós</a>
+                        <a class="fas fa-home mr-0" href="about.html" style="text-decoration: none">Sobre Nós</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="#!">Produtos</a>
+                        <a class="fas fa-home mr-0" href="products.html" style="text-decoration: none">Produtos</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="#!">Perfil</a>
+                        <a class="fas fa-home mr-0" href="profile.html" style="text-decoration: none">Perfil</a>
                     </p>
 
                 </div>
@@ -331,11 +274,8 @@
                     <h6 class="text-uppercase font-weight-bold">Contato</h6>
                     <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fas fa-home mr-0"></i>São Paulo, Paulista 10012, BR</p>
-                    <p>
-                        <i class="fas fa-envelope mr-0"></i>redemandala@india.com</p>
-                    <p>
-                        <i class="fas fa-phone mr-0"></i>+55 11 36598-4563</p>
+                        <a class="fas fa-home mr-0" href="contact.html" style="text-decoration: none">CLIQUE AQUI!</a>
+                    </p>
 
                 </div>
                 <!-- TERCEIRA COLUNA -->
@@ -355,14 +295,21 @@
     </footer>
     <!-- Footer -->
 
-    <!-- JAVA SCRIPT -->
+    <!-- BOTAO TOP -->
+    <div class="smoothscroll-top">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+    </div>
+    <!-- BOTAO TOP -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
     </script>
-    <script src="js/profile.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

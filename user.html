@@ -22,8 +22,8 @@
                 <a href="# "><img id="logo " src="img/logooficial.png " alt="facebook " width=280 height=120></a>
                 <!-- BOTÃO MOBILE -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- BOTÃO MOBILE -->
 
                 <!-- OPÇÕES MENU -->
@@ -48,8 +48,8 @@
                         <!-- LOGAR-SE SUSPENSO -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Logar-se
-                        </a>
+                                Logar-se
+                            </a>
                             <div class="dropdown-menu">
                                 <form class="px-4 py-3">
                                     <div class="form-group">
@@ -63,8 +63,8 @@
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="dropdownCheck">
                                         <label class="form-check-label" for="dropdownCheck">
-                                        Lembrar-me
-                                    </label>
+                                            Lembrar-me
+                                        </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Entrar</button>
                                 </form>
@@ -94,8 +94,8 @@
                             <h5 class="modal-title" id="exampleModalLongTitle">Cadastrar-se</h5>
 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -140,8 +140,8 @@
                             <h5 class="modal-title" id="exampleModalLongTitle">Solicitar Nova Senha</h5>
 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <div class="form-row">
@@ -163,17 +163,12 @@
     <!-- CORPO -->
     <main class="container mb-5">
         ​
-        <section class="row">
+        <section class="row pb-5">
             <div class="col-md-12 mb-3 ">
-                <h2 class="text-center mb-4 mt-2">Dados Pessoais</h2>
+                <h2 class="text-center mb-4 mt-2">Dados de usuário</h2>
             </div>
-            <div class="col-md-3 col-sm-12 borderProfile">
-                <!--
-                    //TODO
-                        align-items-center
-                        justify-content-center
-                        align-content-center
-                -->
+            <div class="col-md-3 col-sm-12 borderProfile pb-5 mb-5">
+
                 <ul class="nav flex-column pl-3 pb-4">
                     <li class="nav-item ">
                         <a class="nav-link text-secondary" href="profile.html">Dados Pessoais</a>
@@ -182,10 +177,10 @@
                         <a class="nav-link text-secondary" href="user.html">Usuário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="payment.html">Pagamento</a>
+                        <a class="nav-link text-secondary" href="payment">Pagamento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Carrinho</a>
+                        <a class="nav-link text-secondary" href="cart.html">Carrinho</a>
                     </li>
 
                 </ul>
@@ -194,59 +189,20 @@
 
                 <form action="#" method="POST" class="col-md-7 col-sm-12">
                     <div class="form-group">
-                        <label for="nome">Nome completo: </label>
-                        <input class="form-control" placeholder="Digite seu nome completo" id="nome" name="nome" type="text" required autofocus>
+                        <label for="email">Email: </label>
+                        <input class="form-control" value="user@gmail.com" id="email" name="email" type="email" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="data-nasc">Data de nascimento: </label>
-                        <input class="form-control" id="data-nasc" name="data-nasc" type="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cpf">CPF: </label>
-                        <input class="form-control" placeholder="Digite seu CPF" id="cpf" name="cpf" type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cep">Cep: </label>
-                        <input class="form-control" placeholder="Digite seu CEP" id="cep" name="cep" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="endereco">Endereço: </label>
-                        <input class="form-control" placeholder="Digite seu endereco" id="endereco" name="endereco" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="bairro">Bairro: </label>
-                        <input class="form-control" placeholder="Digite seu bairro" id="bairro" name="bairro" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="numero">Numero: </label>
-                        <input class="form-control" placeholder="Digite seu numero" id="numero" name="numero" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="complemento">Complemento: </label>
-                        <input class="form-control" placeholder="Digite seu complemento" id="complemento" name="complemento" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="estado">Estado: </label>
-                        <select name="estado" id="estado" class="form-control">
-                            <option value="" disabled selected>Selecione um estado...</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cidade">Cidade: </label>
-                        <select disabled name="cidade" id="cidade" class="form-control">
-                            <option value="" disabled selected>Selecione uma cidade...</option>
-                        </select>
+                        <label class="mr-2">Senha: </label>
+                        <a href="passwordChange.html" class="btn btn-secondary">Alterar</a>
                     </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-outline-info">Salvar</button>
-                        <a href="homePage.html" class="btn btn-outline-secondary">Cancelar</a>
-                    </div>
                 </form>
 
             </div>
         </section>
     </main>
+
     <!-- Footer -->
     <footer id="sticky-footer" class="py-0 bg-dark text-white-50">
         <!-- Rede social -->
@@ -362,7 +318,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
     </script>
-    <script src="js/profile.js"></script>
+    <script src="js/user.js"></script>
 </body>
 
 </html>
