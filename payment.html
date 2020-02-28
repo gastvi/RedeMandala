@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Mandala</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Redes Mandala</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profileForms.css" rel="stylesheet">
+
+
+
+
 </head>
 
 <body>
@@ -107,7 +113,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="senhaUser">Senha</label>
-                              <input type="password" class="form-control" 
+                                    <input type="password" class="form-control" id="senhaUser"
                                         placeholder="Digite sua senha">
                                 </div>
                                 <div class="form-group">
@@ -166,183 +172,64 @@
         <!-- FINAL MODAL -->
     </header>
 
-    <main>
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img id="img" class="" src="img/pack-produtos/produto1.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto2.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto3.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto4.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto5.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto6.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto7.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto8.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto9.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto10.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="img" class="" src="img/pack-produtos/produto11.jpg" alt="Second slide">
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+    <!-- CORPO -->
+    <main class="container mb-5">
+        ​
+        <section class="row">
+            <div class="col-md-12 mb-3 ">
+                <h2 class="text-center mb-4 mt-2">Dados de pagamento</h2>
             </div>
+            <div class="col-md-3 col-sm-12 borderProfile">
 
-        </div>
+                <ul class="nav flex-column pl-3 pb-4">
+                    <li class="nav-item ">
+                        <a class="nav-link text-secondary" href="profile.html">Dados Pessoais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="user.html">Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="payment">Pagamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="cart.html">Carrinho</a>
+                    </li>
 
-
-        <div class="container marketing">
-
-            <!-- Três colunas de texto, abaixo do carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/pack-produtos/produto1.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Rede de Dormir Solteiro Camping</h2>
-                    <p align="justify">Rede em tecido reciclado, plano. Nas cores bege e cinza. Punhos, caréus e mamucabas feitos a mão. Varanda feita a mão.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver Detalhes &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/pack-produtos/produto2.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Rede de dormir casal Elite TR MC</h2>
-                    <p align="justify">Rede em tecido reciclado, liso nas cores laranja, amarelo, preto e alvejado.Varanda feita a mão usando tipologia artesanal macramê.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver Detalhes &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/pack-produtos/produto3.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Rede de dormir casal Caponga TR ML</h2>
-                    <p align="justify">Rede em tecido reciclado, plano. Varanda feita a mão usando tipologia artesanal macramê. Punhos, caréus e mamucabas feitos a mão.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver Detalhes &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
+                </ul>
             </div>
-            <!-- /.row -->
+            <div class="col-md-9 col-sm-12">
 
+                <form action="#" method="POST" class="col-md-7 col-sm-12">
+                    <div class="form-group">
+                        <label for="numeroCartao">Numero do cartão: </label>
+                        <input class="form-control" placeholder="Digite o número do cartão" id="numeroCartao" name="numeroCartao" type="text" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="validade">Validade: </label>
+                        <input class="form-control" id="validade" name="validade" type="month" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV: </label>
+                        <input class="form-control" placeholder="CVV" id="cvv" name="cvv" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="titular">Nome do titular: </label>
+                        <input class="form-control" placeholder="Digite o nome do titular" id="titular" name="titular" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfTitular">CPF do titular: </label>
+                        <input class="form-control" placeholder="Digite o CPF" id="cpfTitular" name="cpfTitular" type="text" required>
+                    </div>
 
-            <!-- CONTEUDO DA PAGINA -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-info">Salvar</button>
+                        <a href="homePage.html" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Rede de dormi casal Fuxico Tanga. <span class="text-muted">Supreendente, não?!</span></h2>
-                    <p align="justify" class="lead">O fuxico é uma técnica artesanal têxtil realizada com tecidos recortados em círculos. A técnica garante o aproveitamento de sobras de tecidos da fábrica em um esforço de gestão para o chamado resíduo zero. Os fuxicos são unidos por
-                        meio de pontos de crochê. Rede em tecido reciclado, liso. Cores com predominância em bege e azul turquesa. Varanda feita a mão usando tipologia artesanal fuxico. Punhos, caréus e mamucabas feitos a mão. Composição: 80% algodão
-                        + 20% Poliéster (PET). Dimensões: Rede completa:4,00m comprimento x 1,55m largura. Tecido: 2,40m x 1,55m. Capacidade: 180 kg. Encolhimento: Até 10%.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto4.jpg" alt="Generic placeholder image">
-                </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Rede de Dormir Casal Pajuçara Fuxico<span class="text-muted">Tá legal ou não tá?</span></h2>
-                    <p align="justify" class="lead">Os fios deste tecido são compostos de algodão natural colorido e orgânico, a pluma já nasce com cor dispensando o uso de aditivos ou corantes e algodão natural cru, cor bege. Rede em tecido plano. Nas cores cru e natural. Varanda artesanal
-                        feita a mão, estilo fuxico. Punhos, caréus e mamucabas feitos a mão. Composição: 100% algodão. Com detalhes em algodão colorido natural e orgânico. Dimensões: Rede completa: 4,20m comprimento x 1,55m largura. Tecido: 2,50m x 1,55m.
-                        Capacidade: 150 kg. Encolhimento: Até 10%.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto5.jpg" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Rede de Dormir Casal Mix Natural. <span class="text-muted">Xeque-mate!</span></h2>
-                    <p align="justify" class="lead">Rede em tecido plano na cor mesclado bege com natural. Varanda patchwork feita com crochê, caréus e mamucabas feitos a mão. Composição: 100% algodão natural Dimensões: Rede completa: 4,15 comprimento x 1,60 largura. Tecido: 2,60m x
-                        1,60m. Capacidade: 180 kg. Encolhimento: Até 10%.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto6.jpg" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Rede de dormir casal Trancê. <span class="text-muted">Tá ótimo né?</span></h2>
-                    <p align="justify" class="lead">A Rede Trancê foi inspirada nas tiras de mamucaba que fazem parte do acabamento da rede. A montagem é feita à mão, com o cuidado de manter o trançado na medida adequada para maior conforto no seu uso. Punhos, caréus e mamucabas feitos
-                        a mão. Composição: 80% algodão + 20% Poliéster (PET). Dimensões: Rede completa: 4.20m comprimento x 1,70m largura. Tecido: 2,45m x 1,70m. Capacidade: 180 kg. Encolhimento: Até 10%.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto7.jpg" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Rede de Dormir Casal Tambaba Algodão Cru. <span class="text-muted">Chique!</span></h2>
-                    <p align="justify" class="lead">Rede em tecido com mosaicos em alto relevo na cor crua.b Varanda feita a mão macramê. Punhos, caréus e mamucabas feitos a mão. Composição: 100% algodão. Dimensões: Rede completa: 4,00 comprimento x 1,60 largura. Tecido: 2,30m x 1,60m.
-                        Capacidade: 140 kg. Encolhimento: Até 10%</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto8.jpg" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Rede De Algodão Natural Com Padrão Jacquard E Macramé - Tambaba Bege. <span class="text-muted">Delicado?</span></h2>
-                    <p align="justify" class="lead">Detalhe do item Rede de descanso de algodão natural com jacquard e macramê - TAMBABA BEGE. Cor: Bege. Tendências: Feito à mão. Estilo: Rede. Tamanho: Largura 163cm / 64.17in, Profundidade 400cm / 157.48in. Composição: COTTON_BIO
-                    </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="img/pack-produtos/produto9.jpg" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-
-            <!-- FIM CONTEUDO DA PAGINA -->
-
-        </div>
-        <!-- /.container MARKETING -->
+        </section>
     </main>
-    
     <!-- Footer -->
     <footer id="sticky-footer" class="py-0 bg-dark text-white-50">
         <!-- Rede social -->
@@ -404,16 +291,16 @@
                     <h6 class="text-uppercase font-weight-bold">Products</h6>
                     <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a class="fas fa-home mr-0" href="index.html" style="text-decoration: none">Página Principal</a>
+                        <a class="fas fa-home mr-0" href="#!">Página Principal</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="about.html" style="text-decoration: none">Sobre Nós</a>
+                        <a class="fas fa-home mr-0" href="#!">Sobre Nós</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="products.html"text-decoration: none">Produtos</a>
+                        <a class="fas fa-home mr-0" href="#!">Produtos</a>
                     </p>
                     <p>
-                        <a class="fas fa-home mr-0" href="profile.html" style="text-decoration: none">Perfil</a>
+                        <a class="fas fa-home mr-0" href="#!">Perfil</a>
                     </p>
 
                 </div>
@@ -427,8 +314,11 @@
                     <h6 class="text-uppercase font-weight-bold">Contato</h6>
                     <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a class="fas fa-home mr-0" href="contact.html" style="text-decoration: none">CLIQUE AQUI!</a>
-                    </p>
+                        <i class="fas fa-home mr-0"></i>São Paulo, Paulista 10012, BR</p>
+                    <p>
+                        <i class="fas fa-envelope mr-0"></i>redemandala@india.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-0"></i>+55 11 36598-4563</p>
 
                 </div>
                 <!-- TERCEIRA COLUNA -->
@@ -448,21 +338,14 @@
     </footer>
     <!-- Footer -->
 
-    <!-- BOTAO TOP -->
-    <div class="smoothscroll-top">
-        <span class="scroll-top-inner">
-            <i class="fa fa-2x fa-arrow-circle-up"></i>
-        </span>
-    </div>
-    <!-- BOTAO TOP -->
-
+    <!-- JAVA SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
     </script>
-    <script src="js/script.js"></script>
+    <script src="js/payment.js"></script>
 </body>
 
 </html>

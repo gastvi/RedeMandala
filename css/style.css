@@ -41,6 +41,8 @@ margin-left: 29%;
      font-family: Gill Sans Extrabold, sans-serif;
      font-size: 18px;
  }
+ 
+ #login::before {}
 
  #navbarDropdown{
      margin-left: 1.4em;
@@ -54,7 +56,6 @@ margin-left: 29%;
      margin-left: -29px;
      margin-top: -1px;
  }
-
  #listaoculta {
      margin-left: 2em;
  }

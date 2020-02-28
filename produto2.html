@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Mandala</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Redes Mandala</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profileForms.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar ">
@@ -165,29 +166,91 @@
         </form>
         <!-- FINAL MODAL -->
     </header>
+    <!-- CORPO -->
+    <main class="container">
+        ​
+        <section class="row">
+            <div class="col-md-12 mb-3 ">
+                <h2 class="text-center mb-4 mt-2">Dados Pessoais</h2>
+            </div>
+            <div class="col-md-3 col-sm-12 borderProfile">
+                <!--
+                    //TODO
+                        align-items-center
+                        justify-content-center
+                        align-content-center
+                -->
+                <ul class="nav flex-column pl-3 pb-4">
+                    <li class="nav-item ">
+                        <a class="nav-link text-secondary" href="profile.html">Dados Pessoais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="user.html">Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="payment.html">Pagamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="cart.html">Carrinho</a>
+                    </li>
 
-    <main>
-        <section class="container-fluid">
-            <a href="listadeprodutos.html"> <img class="img-fluid" src="img/Banner-2.jpg" alt=""></a>
-            <h1 id="tituloPag" class="text-center"> Rede de Descanso Indiana 100% Algodão </h1>
-            <div id="divProduto"class="card mb-3 mx-auto">
-                <img class="card-img-top" src="img/pack-produtos/produto2.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 id="tituloCardProd" class="card-title text-center"> Descrição Do Produto </h5>
-                  <p id="descCard" class="card-text text-center">Rede de Descanso Indiana , um contraste entre a cor laranja que transmite calma e passividade. Essa rede é feita em fios 8/1 em 100% de puro algodão.</p>
-                  <br>
-                  <h5>Dimensões: 2,40 m x 1,40 m</h5>
-                  <h5> Comprimento Total: 4,00 m </h5>
-                  <h5> Peso: 1,5 kg</h5>
-                  <h5>Capacidade Máxima de Carga: 160 kg</h5>
-                  <br>
-                  <h5>Prazo de validade é de tempo indeterminado. Nossas redes de dormir não mancham e nem soltam tinta desde que sejam lavadas de acordo com o manual que as acompanham. Pode haver uma diminuição ou esticamento de cerca de 5% do tamanho total devido à lavagem. Nossos produtos são pré-selecionados por uma equipe que atesta sua segurança e qualidade contra os defeitos de fabricação.</h5>
-                  <br>
-                  <h2>Preço: </h2>
-                  <h2>De: R$ 119,00 Por: R$ 89,99</h2>
-                  <button type="button" class="btn btn-primary btn-lg"> <img src="img/sacola.svg" width="40px"> Adicionar à Sacola!</button>
-                </div>
-              </div>
+                </ul>
+            </div>
+            <div class="col-md-9 col-sm-12">
+
+                <form action="#" method="POST" class="col-md-7 col-sm-12">
+                    <div class="form-group">
+                        <label for="nome">Nome completo: </label>
+                        <input class="form-control" placeholder="Digite seu nome completo" id="nome" name="nome" type="text" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-nasc">Data de nascimento: </label>
+                        <input class="form-control" id="data-nasc" name="data-nasc" type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF: </label>
+                        <input class="form-control" placeholder="Digite seu CPF" id="cpf" name="cpf" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Cep: </label>
+                        <input class="form-control" placeholder="Digite seu CEP" id="cep" name="cep" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço: </label>
+                        <input class="form-control" placeholder="Digite seu endereco" id="endereco" name="endereco" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro: </label>
+                        <input class="form-control" placeholder="Digite seu bairro" id="bairro" name="bairro" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numero: </label>
+                        <input class="form-control" placeholder="Digite seu numero" id="numero" name="numero" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento: </label>
+                        <input class="form-control" placeholder="Digite seu complemento" id="complemento" name="complemento" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="" disabled selected>Selecione um estado...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade: </label>
+                        <select disabled name="cidade" id="cidade" class="form-control">
+                            <option value="" disabled selected>Selecione uma cidade...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-info">Salvar</button>
+                        <a href="homePage.html" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+
+            </div>
         </section>
     </main>
     <!-- Footer -->
@@ -309,6 +372,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
     </script>
+    <script src="js/profile.js"></script>
     <script src="js/script.js"></script>
 </body>
 
